@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { View, Text, Image, TouchableOpacity, Alert, ToastAndroid } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
@@ -5,10 +6,17 @@ import { useRouter } from 'expo-router';
 import { deleteDoc } from 'firebase/firestore';
 import { db } from '../../configs/FirebaseConfig';
 import { useUser } from '@clerk/clerk-expo';
+=======
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import React from 'react'
+import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
 
 
 export default function Intro({society}) {
 
+<<<<<<< HEAD
   
 
   const {user}=useUser();
@@ -34,6 +42,10 @@ export default function Intro({society}) {
       ToastAndroid.show('Society Deleted',ToastAndroid.LONG)
     }
 
+=======
+    const router=useRouter();
+
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
   return (
     <View>
         <View style={{
@@ -58,6 +70,7 @@ export default function Intro({society}) {
         }}
       />
       <View style={{
+<<<<<<< HEAD
         display:'flex',
         flexDirection:'row',
         backgroundColor:'#fff',
@@ -69,6 +82,8 @@ export default function Intro({society}) {
         alignItems:'center'
       }}>
       <View style={{
+=======
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
         padding:20,
         marginTop:-20,
         backgroundColor:'#fff',
@@ -78,6 +93,7 @@ export default function Intro({society}) {
         <Text style={{
             fontSize:26,
             fontFamily:'outfit-bold'
+<<<<<<< HEAD
         }}>{society?.name}
         
         </Text>
@@ -95,6 +111,14 @@ export default function Intro({society}) {
 
       </View>
       
+=======
+        }}>{society.name}</Text>
+        <Text style={{
+            fontSize:18,
+            fontFamily:'outfit'
+        }}>{society.address}</Text>
+      </View>
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
     </View>
   )
 }

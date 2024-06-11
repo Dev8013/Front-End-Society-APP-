@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { View, Text, FlatList,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Colors } from '../../constants/Colors'
@@ -79,6 +80,23 @@ export default function MenuList() {
           </TouchableOpacity>
       )}
       />
+=======
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export default function MenuList() {
+
+    const menuList=[
+        {
+            id:1,
+            name:'Create Society',
+            icon:
+        }
+    ]
+  return (
+    <View>
+      <Text>MenuList</Text>
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
     </View>
   )
 }

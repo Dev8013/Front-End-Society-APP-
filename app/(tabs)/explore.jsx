@@ -3,13 +3,21 @@ import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { Colors } from '../../constants/Colors';
 import Category from './../../components/Home/Category';
+<<<<<<< HEAD
 import { collection, getDocs, query,category } from 'firebase/firestore';
+=======
+import { collection, getDocs, query } from 'firebase/firestore';
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
 import { db } from '../../configs/FirebaseConfig';
 import ExploreSocietyList from '../../components/Explore/ExploreSocietyList';
 
 export default function explore() {
 
+<<<<<<< HEAD
   const [societyList,SetSocietyList] = useState([]);
+=======
+  const [societylist,SetSocietyList] = useState([]);
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
 
   const GetSocietyByCategory=async()=>{
     SetSocietyList([]);

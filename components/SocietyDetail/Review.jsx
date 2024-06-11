@@ -1,10 +1,18 @@
 import { View, Text, TextInput, TouchableOpacity, FlatList } from 'react-native'
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import {Colors} from './../../constants/Colors'
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
 import { db } from '../../configs/FirebaseConfig';
 import { useUser } from '@clerk/clerk-expo';
 import { Rating } from 'react-native-ratings';
+=======
+import {Rating} from 'react-native-ratings'
+import {Colors} from './../../constants/Colors'
+import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
+import { db } from '../../configs/FirebaseConfig';
+import {useUser} from 'react-native'
+>>>>>>> ec1fc8ecf80d4c9da6e6dedb3bed2c9f30be26be
 
 export default function Review({society}) {
 
